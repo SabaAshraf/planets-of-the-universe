@@ -2,18 +2,17 @@
 <html>
 <head>
     <title>Planets of the universe</title>
+    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/stylesheet.css">
 </head>
-<header>
-	<strong>Planets of the universe</strong>
-	<nav>
-		<ul>
-			<li><a href="{{site.baseurl}}/index.html">Home</a></li>
-			<li><a href="{{site.baseurl}}/news.html">News</a></li>
-
-		</ul>
-	</nav>
-</header>
 <body>
-	{{content}}
+	<header>
+		<h1>Planets of the universe</h1>
+		{% include nav.html %}
+	</header>
+		{{content}}
+	<footer>
+		{% include nav.html %}
+		<p>&copy;2017 planets of the universe</p>
+	</footer>
 </body>
 </html>
